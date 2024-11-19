@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos y Días Vividos</title>
+    <script>
+        function calcularDiasVividos(edad) {
+            return edad * 365; 
+        }
+
+        window.onload = function () {
+            const nombrePredefinido = "Juan";
+            const apellidoPredefinido = "Medina";
+            const edadPredefinida = 22;
+            alert(`¡Bienvenido, ${nombrePredefinido} ${apellidoPredefinido}! Tienes ${edadPredefinida} años.`);
+
+            const nombreUsuario = prompt("Ingresa tu nombre:");
+            const apellidoUsuario = prompt("Ingresa tu apellido:");
+            const edadUsuario = prompt("Ingresa tu edad:");
+
+            alert(`¡Bienvenido, ${nombreUsuario} ${apellidoUsuario}! Tienes ${edadUsuario} años.`);
+
+            const diasVividos = calcularDiasVividos(edadUsuario);
+            alert(`Has vivido aproximadamente ${diasVividos} días.`);
+        };
+    </script>
+</head>
+<body>
+    <h1>Bienvenido a la página de consulta</h1>
+    <p>Esta página calcula aproximadamente cuántos días has vivido. Sigue las indicaciones en los cuadros emergentes.</p>
+</body>
+</html>
